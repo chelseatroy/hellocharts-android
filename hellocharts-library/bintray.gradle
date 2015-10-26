@@ -1,0 +1,18 @@
+apply plugin: 'com.jfrog.bintray'
+
+bintray {
+    user = BINTRAY_USER
+    key = BINTRAY_API_KEY
+    publications = ['maven']
+    publish = true
+    pkg {
+        repo = 'maven'
+        name = POM_ARTIFACT_ID
+        licenses = ['Apache-2.0']
+        vcsUrl = 'https://github.com/chelseatroy/hellocharts-android'
+        version {
+            name = VERSION_NAME
+        }
+    }
+}
+

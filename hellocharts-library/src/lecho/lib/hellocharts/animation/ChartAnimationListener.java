@@ -5,7 +5,7 @@ package lecho.lib.hellocharts.animation;
  * all types of chart animations(data, viewport, PieChart rotation).
  */
 public interface ChartAnimationListener {
-
+//hello
     public void onAnimationStarted();
 
     public void onAnimationFinished();
